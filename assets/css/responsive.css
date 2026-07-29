@@ -1,4 +1,4 @@
-
+/* Header — kleinere desktops */
 @media (min-width: 1051px) and (max-width: 1439px) {
   .hero {
     height: clamp(540px, 48vw, 620px);
@@ -10,6 +10,8 @@
   .hero-actions { margin-top: 30px; }
 }
 
+
+/* De Weyde — kleinere desktops */
 @media (min-width: 1051px) and (max-width: 1399px) {
   .about {
     grid-template-columns: minmax(0, .92fr) minmax(430px, 1.08fr);
@@ -28,6 +30,8 @@
   .mask-3 { width: min(180px, 72%); }
 }
 
+
+/* Tablet en kleiner — globale omschakeling */
 @media (max-width: 1050px) {
   .desktop-nav,
   .header-cta { display: none; }
@@ -41,6 +45,8 @@
   .facilities-grid { gap: 55px 45px; transform: none; }
 }
 
+
+/* Tablet — Header en De Weyde */
 @media (min-width: 761px) and (max-width: 1050px) {
   .hero {
     height: clamp(460px, 52vw, 520px);
@@ -71,6 +77,8 @@
   .mask-3 { width: min(155px, 76%); }
 }
 
+
+/* Mobiel — Menu, Header, USP's, Foto's, Quotes, Huisdetails, De Weyde en Footer */
 @media (max-width: 760px) {
   body { font-size: var(--mobile-body-size); line-height: var(--mobile-body-line-height); }
   .content-width { width: 100%; padding-inline: var(--mobile-content-padding); }
@@ -458,6 +466,8 @@
   .footer-bottom nav { display: grid; gap: 8px; margin-top: 20px; }
 }
 
+
+/* Kleine mobiele schermen */
 @media (max-width: 420px) {
   .brand img { width: 178px; }
   .hero-media { height: 390px; }

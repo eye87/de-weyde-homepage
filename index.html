@@ -12,18 +12,19 @@
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/components/buttons.css">
-  <link rel="stylesheet" href="assets/css/components/header.css">
-  <link rel="stylesheet" href="assets/css/sections/hero.css">
-  <link rel="stylesheet" href="assets/css/sections/usp.css">
-  <link rel="stylesheet" href="assets/css/sections/gallery.css">
-  <link rel="stylesheet" href="assets/css/sections/testimonial.css">
-  <link rel="stylesheet" href="assets/css/sections/facilities.css">
-  <link rel="stylesheet" href="assets/css/sections/about.css">
+  <link rel="stylesheet" href="assets/css/components/menu.css">
+  <link rel="stylesheet" href="assets/css/sections/header.css">
+  <link rel="stylesheet" href="assets/css/sections/usps.css">
+  <link rel="stylesheet" href="assets/css/sections/fotos.css">
+  <link rel="stylesheet" href="assets/css/sections/quotes.css">
+  <link rel="stylesheet" href="assets/css/sections/huisdetails.css">
+  <link rel="stylesheet" href="assets/css/sections/de-weyde.css">
   <link rel="stylesheet" href="assets/css/components/footer.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/css/motion.css">
 </head>
 <body>
+  <!-- Menu -->
   <header class="site-header" id="top">
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="De Weyde home">
@@ -55,6 +56,7 @@
   </div>
 
   <main>
+    <!-- Header -->
     <section class="hero section-shell" aria-labelledby="hero-title">
       <div class="hero-media">
         <img class="hero-brush-mobile" src="assets/mobile/hero-brush-mobile.svg" alt="" aria-hidden="true">
@@ -72,6 +74,7 @@
       <picture class="hero-brush" aria-hidden="true"><img src="assets/brushes/hero-overlay.svg" alt=""></picture>
     </section>
 
+    <!-- USP's -->
     <section class="usp-section content-width" aria-label="Kenmerken van het vakantiehuis">
       <article class="usp-item"><img src="assets/icons/icon-personen.svg" alt=""><strong>12</strong><span>personen</span></article>
       <article class="usp-item"><img src="assets/icons/icon-slaapkamers.svg" alt=""><strong>4</strong><span>slaapkamers</span></article>
@@ -79,6 +82,7 @@
       <article class="usp-item"><img src="assets/icons/icon-grote-privetuin.svg" alt=""><strong>Grote</strong><span>privétuin</span></article>
     </section>
 
+    <!-- Foto's -->
     <section class="discover section-shell section-tinted" id="vakantiehuis">
       <div class="section-heading centered content-width">
         <p class="eyebrow">Ontdek De Weyde</p>
@@ -86,16 +90,17 @@
         <p>Binnen geniet je van een ruime woonkamer en comfortabele slaapkamers.<br>Buiten wacht een grote tuin met uitzicht over het Groningse landschap.</p>
       </div>
       <div class="gallery content-width">
-        <a class="gallery-card gallery-main" href="#"><img src="assets/fotos/foto-vakantiehuis-de-weyde-1-huis.webp" alt="Vakantiehuis De Weyde"></a>
-        <a class="gallery-card gallery-living" href="#"><img src="assets/fotos/foto-vakantiehuis-de-weyde-2-woonkamer.webp" alt="Woonkamer"></a>
-        <a class="gallery-card gallery-hammock" href="#"><img src="assets/fotos/foto-vakantiehuis-de-weyde-3-hangmat.webp" alt="Hangmat in de tuin"></a>
-        <a class="gallery-card gallery-terrace" href="#"><img src="assets/fotos/foto-vakantiehuis-de-weyde-4-tuinhuis.webp" alt="Overdekt terras"></a>
-        <a class="gallery-card gallery-bedroom" href="#"><img src="assets/fotos/foto-vakantiehuis-de-weyde-5-slaapkamer.webp" alt="Slaapkamer"></a>
-        <a class="gallery-card gallery-more" href="#"><img src="assets/fotos/foto-vakantiehuis-de-weyde-6-tuin.webp" alt="Tuin"><span><strong>+8</strong>Meer foto's</span></a>
+        <a class="gallery-card gallery-main" href="#"><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-1-huis.webp" alt="Vakantiehuis De Weyde"></a>
+        <a class="gallery-card gallery-living" href="#"><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-2-woonkamer.webp" alt="Woonkamer"></a>
+        <a class="gallery-card gallery-hammock" href="#"><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-3-hangmat.webp" alt="Hangmat in de tuin"></a>
+        <a class="gallery-card gallery-terrace" href="#"><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-4-tuinhuis.webp" alt="Overdekt terras"></a>
+        <a class="gallery-card gallery-bedroom" href="#"><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-5-slaapkamer.webp" alt="Slaapkamer"></a>
+        <a class="gallery-card gallery-more" href="#"><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-6-tuin.webp" alt="Tuin"><span><strong>+8</strong>Meer foto's</span></a>
       </div>
-      <div class="gallery-cta"><a class="button button-primary" href="#">Bekijk fotogallerij</a></div>
+      <div class="gallery-cta"><a class="button button-primary" href="#">Bekijk fotogalerij</a></div>
     </section>
 
+    <!-- Quotes -->
     <section class="testimonial content-width" aria-label="Gastenreview">
       <div class="testimonial-shape">
         <div class="testimonial-content">
@@ -108,9 +113,10 @@
       </div>
     </section>
 
+    <!-- Huisdetails -->
     <section class="facilities section-shell section-tinted" id="omgeving">
       <div class="facilities-heading centered content-width">
-        <img src="assets/illustraties/illustratie-ontdek-het-vakantiehuis.svg" alt="Illustratie van De Weyde">
+        <img loading="lazy" decoding="async" src="assets/illustraties/illustratie-ontdek-het-vakantiehuis.svg" alt="Illustratie van De Weyde">
         <p class="eyebrow">Ontdek het vakantiehuis</p>
         <h2>Alles wat je nodig hebt<br>voor een ontspannen verblijf</h2>
       </div>
@@ -125,6 +131,7 @@
       <div class="centered"><a id="reserveren" class="button button-primary" href="#contact">Reservering aanvragen</a></div>
     </section>
 
+    <!-- De Weyde -->
     <section class="about content-width">
       <div class="about-copy">
         <p class="eyebrow">Waarom De Weyde</p>
@@ -166,7 +173,7 @@
               <path d="M9.89703 287.291C8.09365 285.402 7.34694 282.295 7.55827 279.775L9.89703 287.291Z" fill="black"/>
             </clipPath>
           </defs>
-          <image class="masked-photo__image" href="assets/fotos/over-de-weyde-foto-1-masked.png" width="527" height="528" preserveAspectRatio="xMidYMid slice" clip-path="url(#about-photo-clip-1)" />
+          <image class="masked-photo__image" decoding="async" href="assets/fotos/over-de-weyde-foto-1-masked.png" width="527" height="528" preserveAspectRatio="xMidYMid slice" clip-path="url(#about-photo-clip-1)" />
         </svg>
         <svg class="masked-photo mask-2" viewBox="0 0 356 327" role="img" aria-label="Vakantiehuis De Weyde">
           <defs>
@@ -205,7 +212,7 @@
               <path d="M345.177 107.969L343.078 102.545C344.181 103.962 344.804 106.196 345.177 107.969Z" fill="black"/>
             </clipPath>
           </defs>
-          <image class="masked-photo__image" href="assets/fotos/over-de-weyde-foto-2-masked.png" width="356" height="327" preserveAspectRatio="xMidYMid slice" clip-path="url(#about-photo-clip-2)" />
+          <image class="masked-photo__image" decoding="async" href="assets/fotos/over-de-weyde-foto-2-masked.png" width="356" height="327" preserveAspectRatio="xMidYMid slice" clip-path="url(#about-photo-clip-2)" />
         </svg>
         <svg class="masked-photo mask-3" viewBox="0 0 271 271" role="img" aria-label="Welkom bij De Weyde">
           <defs>
@@ -236,15 +243,16 @@
               <path d="M5.08925 147.731C4.16192 146.759 3.77794 145.161 3.88661 143.866L5.08925 147.731Z" fill="black"/>
             </clipPath>
           </defs>
-          <image class="masked-photo__image" href="assets/fotos/over-de-weyde-foto-3-masked.png" width="271" height="271" preserveAspectRatio="xMidYMid slice" clip-path="url(#about-photo-clip-3)" />
+          <image class="masked-photo__image" decoding="async" href="assets/fotos/over-de-weyde-foto-3-masked.png" width="271" height="271" preserveAspectRatio="xMidYMid slice" clip-path="url(#about-photo-clip-3)" />
         </svg>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer id="contact">
     <div class="footer-shell section-shell">
-      <picture class="footer-illustration" aria-hidden="true"><source media="(max-width:760px)" srcset="assets/illustraties/illustratie-footer-mobile.svg"><img src="assets/illustraties/llustratie-footer.svg" alt=""></picture>
+      <picture class="footer-illustration" aria-hidden="true"><source media="(max-width:760px)" srcset="assets/illustraties/illustratie-footer-mobile.svg"><img loading="lazy" decoding="async" src="assets/illustraties/illustratie-footer.svg" alt=""></picture>
       <div class="footer-main content-width">
         <div class="footer-brand"><img src="assets/brand/logo-de-weyde-wit.svg" alt="De Weyde"><p>Een sfeervol vakantiehuis voor 2 tot 12 personen, midden in het groene landschap van Westerwolde.</p><a class="button button-primary" href="#reserveren">Reservering aanvragen</a></div>
         <div class="footer-links"><h2>Vakantiehuis</h2><a href="#vakantiehuis"><img src="assets/icons/icon-arrow-right.svg" alt=""><span>Over De Weyde</span></a><a href="#vakantiehuis"><img src="assets/icons/icon-arrow-right.svg" alt=""><span>Foto’s en voorzieningen</span></a><a href="#reserveren"><img src="assets/icons/icon-arrow-right.svg" alt=""><span>Prijzen en beschikbaarheid</span></a><a href="#omgeving"><img src="assets/icons/icon-arrow-right.svg" alt=""><span>Omgeving</span></a><a href="#"><img src="assets/icons/icon-arrow-right.svg" alt=""><span>Veelgestelde vragen</span></a></div>
