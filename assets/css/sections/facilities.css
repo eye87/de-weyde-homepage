@@ -1,0 +1,52 @@
+.facilities { padding: 96px 0 114px; }
+.facilities-heading img { width: 360px; margin: 0 auto 45px; }
+.facilities-heading h2 { font-size: 43px; }
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 72px 95px;
+  margin-top: 80px;
+  margin-bottom: 65px;
+  transform: translateX(48px);
+}
+.facility button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--color-green);
+  text-align: left;
+  cursor: default;
+}
+.facility button span {
+  display: block;
+  font: 600 20px Lora, Georgia, serif;
+}
+.facility button img {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+.facility button b { display: none; }
+.facility-arrow { display: none; }
+.facility ul {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0 0;
+  padding: 0;
+  color: #111;
+  font-size: 14px;
+  list-style: none;
+}
+.facility li { position: relative; padding-left: 28px; }
+.facility li::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url('../../icons/icon-check.svg') center / contain no-repeat;
+}

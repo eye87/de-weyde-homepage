@@ -1,0 +1,26 @@
+.testimonial { padding: 126px 0; }
+.testimonial-shape {
+  display: grid;
+  place-items: center;
+  width: min(710px, 90vw);
+  aspect-ratio: 1 / 1;
+  margin: auto;
+  background: url('../../brushes/brush-background-quote.svg') center / contain no-repeat;
+  color: var(--color-white);
+}
+.testimonial-content { width: 75%; text-align: center; }
+.quote-icon { width: 52px; margin: 0 auto 26px; }
+.testimonial h2 { font-size: 44px; font-style: italic; }
+.quote-line { width: 84px; margin: 25px auto; }
+.testimonial blockquote {
+  max-width: 520px;
+  margin: 0 auto 30px;
+  font: 400 18px / 1.7 Lora, Georgia, serif;
+}
+.testimonial cite {
+  color: var(--color-accent);
+  font: 600 11px Inter, Arial, sans-serif;
+  font-style: normal;
+  letter-spacing: .35em;
+  text-transform: uppercase;
+}

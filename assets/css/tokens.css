@@ -1,0 +1,37 @@
+:root {
+  --color-green: #06311d;
+  --color-accent: #ba7548;
+  --color-black: #000;
+  --color-page: #fefdfb;
+  --color-tint: #fcf9f6;
+  --color-white: #fff;
+  --radius-section: 20px;
+  --radius-image: 10px;
+  --max-section: 1680px;
+  --max-content: 1240px;
+  --gutter-section: 20px;
+  --gutter-content: 40px;
+  --header-height: 106px;
+  --transition-fast: .25s ease;
+  --transition-slow: .35s ease-out;
+  --shadow-header: 0 4px 20px rgba(0, 0, 0, .15);
+
+  /* Mobile system */
+  --mobile-header-padding: 20px;
+  --mobile-content-padding: 30px;
+  --mobile-space-s: 20px;
+  --mobile-space-m: 30px;
+  --mobile-space-l: 40px;
+  --mobile-space-xl: 60px;
+  --mobile-space-xxl: 80px;
+  --mobile-eyebrow-size: 12px;
+  --mobile-h1-size: 35px;
+  --mobile-h1-line-height: 40px;
+  --mobile-h2-size: 25px;
+  --mobile-h3-size: 16px;
+  --mobile-body-size: 14px;
+  --mobile-body-line-height: 25px;
+  --mobile-quote-size: 15px;
+  --mobile-button-height: 45px;
+  --mobile-button-size: 13px;
+}

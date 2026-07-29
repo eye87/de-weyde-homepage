@@ -1,0 +1,26 @@
+.usp-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 92px 0 106px;
+}
+.usp-item { text-align: center; }
+.usp-item img {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 17px;
+  object-fit: contain;
+  transition: transform .28s cubic-bezier(.22,.7,.2,1);
+}
+@media (hover: hover) and (pointer: fine) {
+  .usp-item:hover img { transform: translateY(-2px) scale(1.08); }
+}
+.usp-item strong {
+  display: block;
+  font: 500 42px / 1 Lora, Georgia, serif;
+}
+.usp-item span {
+  display: block;
+  margin-top: 7px;
+  color: #111;
+  font-size: 16px;
+}

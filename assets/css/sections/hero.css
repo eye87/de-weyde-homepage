@@ -1,0 +1,51 @@
+.hero {
+  position: relative;
+  height: min(735px, calc(100vh - 112px));
+  min-height: 650px;
+  overflow: hidden;
+  color: var(--color-white);
+}
+.hero-media,
+.hero-overlay { position: absolute; inset: 0; }
+.hero-brush-mobile { display: none; }
+.hero-media {
+  background: url('../../fotos/vakantiehuis-de-weyde-banner.webp') center 48% / cover no-repeat;
+  transform: scale(1.001);
+  transition: transform 7s cubic-bezier(.2, .65, .25, 1);
+  will-change: transform;
+}
+.hero:hover .hero-media { transform: scale(1.04); }
+.hero-overlay {
+  background: linear-gradient(90deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.24) 50%, rgba(0,0,0,.03) 82%);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: var(--max-content);
+  padding-top: 128px;
+}
+.eyebrow-light { color: var(--color-white); }
+.hero h1 {
+  max-width: 670px;
+  font-size: clamp(54px, 4.55vw, 70px);
+  line-height: 1.08;
+}
+.hero-intro {
+  max-width: 565px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.85;
+}
+.hero-actions { display: flex; gap: 20px; margin-top: 38px; }
+.hero-actions .button { min-height: 46px; padding-inline: 27px; }
+.hero-brush {
+  position: absolute;
+  left: -10px;
+  bottom: -1px;
+  z-index: 3;
+  display: block;
+  width: calc(100% + 20px);
+  max-width: none;
+  pointer-events: none;
+}
+.hero-brush img { width: 100%; height: auto; }
