@@ -50,5 +50,10 @@
 - Sluiticoon vergroot naar 24 px hoogte, met behoud van dezelfde positie als het hamburgericoon.
 
 
-## v3.4.20
+## v3.4.21
 De drie foto’s in “Waarom De Weyde” gebruiken nu inline SVG clipPaths. De eerdere witte overlay-SVG’s zijn verwijderd, zodat de foto’s zonder vierkante achtergrond kunnen overlappen.
+
+
+## v3.4.21
+- Responsive fotocollage in “Waarom De Weyde” zonder onderlinge overlap.
+- Drop shadow toegevoegd aan de mobiele sticky header.
