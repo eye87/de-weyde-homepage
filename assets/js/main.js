@@ -240,7 +240,7 @@ function stopQuoteRotation() {
 
 function startQuoteRotation() {
   stopQuoteRotation();
-  if (quoteSlides.length < 2 || reducedMotionQuery.matches || document.hidden) return;
+  if (quoteSlides.length < 2 || document.hidden) return;
   quoteRotationTimer = window.setInterval(() => showQuote(activeQuoteIndex + 1), 7500);
 }
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.7.2 — Quotes blijven wisselen bij verminderde beweging
+
+- De quote-rotatie blijft actief wanneer `prefers-reduced-motion: reduce` is ingesteld, waaronder op iPhones met “Verminder beweging”.
+- De crossfade-animatie wordt in dat geval uitgeschakeld via CSS; de inhoud wisselt nog steeds zonder beweging.
+- Pauzeren bij een inactief browsertabblad blijft behouden.
+
 ## v3.7.1 — Mobiele galerie, quotes en lightbox-polish
 
 - De “Bekijk alle foto’s”-overlay wordt op mobiel niet meer getoond; de laatste kaart is daar een normale fotoslide.
