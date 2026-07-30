@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="assets/css/sections/header.css">
   <link rel="stylesheet" href="assets/css/sections/usps.css">
   <link rel="stylesheet" href="assets/css/sections/fotos.css">
+  <link rel="stylesheet" href="assets/css/components/lightbox.css">
   <link rel="stylesheet" href="assets/css/sections/quotes.css">
   <link rel="stylesheet" href="assets/css/sections/huisdetails.css">
   <link rel="stylesheet" href="assets/css/sections/de-weyde.css">
@@ -89,15 +90,15 @@
         <h2>Binnen warm, buiten vrij</h2>
         <p>Binnen geniet je van een ruime woonkamer en comfortabele slaapkamers.<br>Buiten wacht een grote tuin met uitzicht over het Groningse landschap.</p>
       </div>
-      <div class="gallery content-width">
-        <a class="gallery-card gallery-main" href="#"><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-1-huis.webp" alt="Vakantiehuis De Weyde"></a>
-        <a class="gallery-card gallery-living" href="#"><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-2-woonkamer.webp" alt="Woonkamer"></a>
-        <a class="gallery-card gallery-hammock" href="#"><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-3-hangmat.webp" alt="Hangmat in de tuin"></a>
-        <a class="gallery-card gallery-terrace" href="#"><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-4-tuinhuis.webp" alt="Overdekt terras"></a>
-        <a class="gallery-card gallery-bedroom" href="#"><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-5-slaapkamer.webp" alt="Slaapkamer"></a>
-        <a class="gallery-card gallery-more" href="#"><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-6-tuin.webp" alt="Tuin"><span><strong>+8</strong>Meer foto's</span></a>
+      <div class="gallery content-width" data-gallery aria-label="Foto-impressie van vakantiehuis De Weyde">
+        <button class="gallery-card gallery-main" type="button" data-gallery-item data-title="Vakantiehuis De Weyde" data-description="Een ruim vakantiehuis midden in het groene landschap van Westerwolde."><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-1-huis.webp" alt="Vakantiehuis De Weyde in het landschap"></button>
+        <button class="gallery-card gallery-living" type="button" data-gallery-item data-title="Ruimte om samen te zijn" data-description="Een lichte woonkamer met alle ruimte voor lange avonden met familie en vrienden."><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-2-woonkamer.webp" alt="Ruime woonkamer van De Weyde"></button>
+        <button class="gallery-card gallery-hammock" type="button" data-gallery-item data-title="Ontspannen in de tuin" data-description="Een rustige plek om te lezen, luieren en van het buitenleven te genieten."><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-3-hangmat.webp" alt="Hangmat in de groene tuin"></button>
+        <button class="gallery-card gallery-terrace" type="button" data-gallery-item data-title="Het gezellige tuinhuis" data-description="Beschut buiten zitten met vrij uitzicht over het Groningse landschap."><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-4-tuinhuis.webp" alt="Gezellig tuinhuis met overdekt terras"></button>
+        <button class="gallery-card gallery-bedroom" type="button" data-gallery-item data-title="Comfortabele slaapkamers" data-description="Rustige kamers om na een lange dag volledig tot rust te komen."><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-5-slaapkamer.webp" alt="Comfortabele slaapkamer in De Weyde"></button>
+        <button class="gallery-card gallery-more" type="button" data-gallery-item data-title="Een grote privétuin" data-description="Veel ruimte om buiten te eten, spelen en samen van de natuur te genieten."><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-6-tuin.webp" alt="Grote privétuin met vrij uitzicht"><span><strong>6</strong>Bekijk alle foto's</span></button>
       </div>
-      <div class="gallery-cta"><a class="button button-primary" href="#">Bekijk fotogalerij</a></div>
+      <div class="gallery-cta"><span class="gallery-mobile-hint" aria-hidden="true">Swipe om alle foto's te bekijken</span></div>
     </section>
 
     <!-- Quotes -->
@@ -265,6 +266,31 @@
     </div>
     <div class="footer-bottom content-width"><span>© 2026 De Weyde</span><nav><a href="#">Privacyverklaring</a><a href="#">Algemene voorwaarden</a><a href="#">Website door <em>Eye Entertainment</em></a></nav></div>
   </footer>
+
+  <dialog class="photo-lightbox" data-lightbox aria-labelledby="lightbox-title">
+    <div class="photo-lightbox__backdrop" data-lightbox-close></div>
+    <div class="photo-lightbox__panel" role="document">
+      <button class="photo-lightbox__close" type="button" data-lightbox-close aria-label="Fotogalerij sluiten">
+        <span aria-hidden="true">×</span>
+      </button>
+      <button class="photo-lightbox__nav photo-lightbox__nav--previous" type="button" data-lightbox-previous aria-label="Vorige foto">
+        <span aria-hidden="true">←</span>
+      </button>
+      <figure class="photo-lightbox__figure">
+        <div class="photo-lightbox__image-wrap">
+          <img class="photo-lightbox__image" data-lightbox-image src="" alt="">
+        </div>
+        <figcaption class="photo-lightbox__caption">
+          <h2 id="lightbox-title" data-lightbox-title></h2>
+          <p data-lightbox-description></p>
+          <span class="photo-lightbox__counter" data-lightbox-counter aria-live="polite"></span>
+        </figcaption>
+      </figure>
+      <button class="photo-lightbox__nav photo-lightbox__nav--next" type="button" data-lightbox-next aria-label="Volgende foto">
+        <span aria-hidden="true">→</span>
+      </button>
+    </div>
+  </dialog>
 
   <script src="assets/js/main.js"></script>
 </body>

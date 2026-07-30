@@ -12,8 +12,15 @@
 }
 .gallery-card {
   position: relative;
+  display: block;
   overflow: hidden;
+  padding: 0;
+  border: 0;
   border-radius: var(--radius-image);
+  background: transparent;
+  cursor: zoom-in;
+  font: inherit;
+  text-align: left;
 }
 .gallery-card img {
   width: 100%;
@@ -22,6 +29,7 @@
   transition: transform .4s ease;
 }
 .gallery-card:hover img { transform: scale(1.04); }
+.gallery-card:focus-visible { outline: 3px solid var(--color-green); outline-offset: 5px; }
 .gallery-main { grid-column: 1 / 3; grid-row: 1 / 3; }
 .gallery-living { grid-column: 3; grid-row: 1; }
 .gallery-hammock { grid-column: 3; grid-row: 2; }
@@ -51,3 +59,4 @@
 }
 .gallery-more strong { font-size: 40px; }
 .gallery-cta { display: none; text-align: center; }
+.gallery-mobile-hint { color: var(--color-green); font-size: 13px; letter-spacing: .04em; }

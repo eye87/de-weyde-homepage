@@ -1,59 +1,59 @@
-# De Weyde homepage v3.4.13
+# De Weyde homepage
 
-## Wijzigingen
+Statische frontend van de homepage van vakantiehuis De Weyde.
 
-- Mobiele hero-brush loopt 8px per zijde door en overlapt 3px aan de onderkant.
-- De dubbele mobiele brush-rendering is verwijderd; mobiel gebruikt nog maar één brush in de hero-media-wrapper.
-- Alle mobiele eyebrows, inclusief “WAAROM DE WEYDE”, gebruiken dezelfde typografie: Inter 12px, 400, uppercase, 0.25em en #BA7548.
-- De tekst van “Waarom De Weyde” staat mobiel 14px dichter bij de fotocollage.
-- Eerste versie van het uitgeklapte mobiele menu toegevoegd met full-screen achtergrond, wit logo, navigatiepijlen, CTA en een sluitknop.
-- Het mobiele menu sluit via het kruis, een navigatielink of de Escape-toets en blokkeert scrollen zolang het open is.
-- CSS- en assetverwijzingen gecontroleerd; dubbele hero-markup opgeschoond.
+## Contentblokken
+
+De code gebruikt de volgende vaste benamingen:
+
+1. Menu
+2. Header
+3. USP's
+4. Foto's
+5. Quotes
+6. Huisdetails
+7. De Weyde
+8. Footer
+
+De HTML-secties zijn met deze namen gemarkeerd. De bijbehorende CSS-bestanden gebruiken dezelfde naamgeving.
+
+## Projectstructuur
+
+```text
+assets/
+├── brand/          Logo's
+├── brushes/        Organische SVG-vormen
+├── css/
+│   ├── components/ Menu, buttons en footer
+│   └── sections/   De contentblokken van de homepage
+├── fotos/          Foto-assets
+├── icons/          Interface- en contenticonen
+├── illustraties/   Decoratieve illustraties
+├── js/             Interacties
+└── mobile/         Mobiele menu- en hero-assets
+```
+
+## Lokaal bekijken
+
+Open `index.html` rechtstreeks in een browser of gebruik een lokale webserver, bijvoorbeeld via de Live Server-extensie in VS Code.
+
+## Versie 3.5.0 — code cleanup
+
+- CSS-bestanden hernoemd volgens de afgesproken contentblokken.
+- HTML-secties voorzien van duidelijke bloklabels.
+- Onnodige macOS-bestanden en dubbele losse clipPath-bestanden verwijderd.
+- Typfout in `illustratie-footer.svg` hersteld.
+- Spelling van “fotogalerij” gecorrigeerd.
+- Lazy loading en asynchrone decodering toegevoegd aan afbeeldingen onder de vouw.
+- Mobiel menu voorzien van een focus trap voor toetsenbordgebruik.
+- Menu- en accordionstatus worden robuust gereset bij viewportwissels.
+- Responsive CSS leesbaarder gemarkeerd zonder de cascade of visuele uitkomst te wijzigen.
+
+## Belangrijk
+
+Deze cleanup is bedoeld als structurele optimalisatie. Layout, breakpoints, animaties en vormgeving zijn bewust behouden.
 
 
-## v3.4.16
-- Tablet hero compacter gemaakt.
-- About-collage op tablet naast de tekst geplaatst.
-- Definitieve mobile-menu achtergrond en close-icon toegevoegd.
-- Mobiele menutypografie, pijlen en CTA gelijkgetrokken met het ontwerp.
-- Subtiele menu-open animatie toegevoegd.
-- Desktop USP-iconen vergroten subtiel op hover.
+## Fotogalerij
 
-
-## v3.4.16
-- Mobiel menu: 40 px witruimte boven en onder de achtergrond-SVG.
-- Mobiel menu: logo 25% groter, navigatie en CTA verder naar binnen.
-- Mobiel menu: CTA 80 px onder de menu-items en gelijk aan de navigatiebreedte.
-- Tablet: hero opnieuw compacter gemaakt.
-
-
-## Wijzigingen v3.4.16
-- Hero op kleine desktops/laptops (1051–1439 px) compacter gemaakt.
-- Mobiele menu-achtergrond begrensd tot maximaal 900 px zodat de content de verhouding bepaalt en geen groot leeg groen vlak ontstaat.
-- About-collage op smallere desktops (1051–1399 px) als één compositie geschaald; onderste foto's zijn kleiner en verder uit elkaar geplaatst.
-
-
-## v3.4.18
-- Mobiele faciliteiten-accordion: iconen staan in een vaste kolom, waardoor alle titels exact gelijk uitlijnen.
-- Mobiele sluitknop staat op dezelfde positie en heeft hetzelfde formaat als het hamburgericoon.
-
-
-## v3.4.18
-- Modernere mobiele menu-animatie met een zachte reveal, subtiele achtergrondbeweging en staggered content.
-- Witte menulaag voorzien van lichte transparantie en backdrop blur; de groene SVG blijft volledig dekkend.
-- Sluiticoon gefixeerd op 21 px hoogte en uitgelijnd op de positie van het hamburgericoon.
-- Mobiele link-underlines lopen alleen nog onder de tekst.
-
-
-## v3.4.19
-- Mobiele menu-overgang vloeiender gemaakt: de sticky header wordt niet meer vooraf verborgen; het menu verschijnt er direct en synchroon overheen.
-- Sluiticoon vergroot naar 24 px hoogte, met behoud van dezelfde positie als het hamburgericoon.
-
-
-## v3.4.21
-De drie foto’s in “Waarom De Weyde” gebruiken nu inline SVG clipPaths. De eerdere witte overlay-SVG’s zijn verwijderd, zodat de foto’s zonder vierkante achtergrond kunnen overlappen.
-
-
-## v3.4.21
-- Responsive fotocollage in “Waarom De Weyde” zonder onderlinge overlap.
-- Drop shadow toegevoegd aan de mobiele sticky header.
+De kaarten in `[data-gallery]` vormen de databron voor zowel de mobiele slider als de desktop-lightbox. Elke kaart bevat een afbeelding, `data-title` en een optionele `data-description`. Hierdoor kan de inhoud later rechtstreeks vanuit WordPress worden opgebouwd zonder de lightboxlogica te wijzigen.

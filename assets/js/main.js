@@ -107,3 +107,108 @@ document.querySelectorAll('.facility button').forEach(button => {
 
 updateHeaderShadow();
 syncFacilitiesForViewport();
+
+/* ======================================================
+   FOTO'S / LIGHTBOX
+====================================================== */
+const gallery = document.querySelector('[data-gallery]');
+const galleryItems = gallery ? [...gallery.querySelectorAll('[data-gallery-item]')] : [];
+const lightbox = document.querySelector('[data-lightbox]');
+const lightboxImage = lightbox?.querySelector('[data-lightbox-image]');
+const lightboxTitle = lightbox?.querySelector('[data-lightbox-title]');
+const lightboxDescription = lightbox?.querySelector('[data-lightbox-description]');
+const lightboxCounter = lightbox?.querySelector('[data-lightbox-counter]');
+const lightboxPrevious = lightbox?.querySelector('[data-lightbox-previous]');
+const lightboxNext = lightbox?.querySelector('[data-lightbox-next]');
+const lightboxCloseButtons = lightbox ? [...lightbox.querySelectorAll('[data-lightbox-close]')] : [];
+
+let activePhotoIndex = 0;
+let lightboxTrigger = null;
+let touchStartX = 0;
+
+const galleryPhotos = galleryItems.map(item => {
+  const image = item.querySelector('img');
+  return {
+    src: image?.currentSrc || image?.src || '',
+    alt: image?.alt || '',
+    title: item.dataset.title || '',
+    description: item.dataset.description || ''
+  };
+});
+
+function updateLightbox(index) {
+  if (!lightbox || !galleryPhotos.length) return;
+
+  activePhotoIndex = (index + galleryPhotos.length) % galleryPhotos.length;
+  const photo = galleryPhotos[activePhotoIndex];
+
+  lightbox.classList.remove('is-ready');
+  if (lightboxImage) {
+    lightboxImage.src = photo.src;
+    lightboxImage.alt = photo.alt;
+  }
+  if (lightboxTitle) lightboxTitle.textContent = photo.title;
+  if (lightboxDescription) {
+    lightboxDescription.textContent = photo.description;
+    lightboxDescription.hidden = !photo.description;
+  }
+  if (lightboxCounter) lightboxCounter.textContent = `${activePhotoIndex + 1} / ${galleryPhotos.length}`;
+
+  requestAnimationFrame(() => lightbox.classList.add('is-ready'));
+}
+
+function openLightbox(index, trigger) {
+  if (!lightbox || mobileQuery.matches || !galleryPhotos.length) return;
+
+  lightboxTrigger = trigger;
+  updateLightbox(index);
+  document.body.classList.add('lightbox-open');
+  lightbox.showModal();
+  lightbox.querySelector('.photo-lightbox__close')?.focus();
+}
+
+function closeLightbox() {
+  if (!lightbox?.open) return;
+
+  lightbox.close();
+  lightbox.classList.remove('is-ready');
+  document.body.classList.remove('lightbox-open');
+  lightboxTrigger?.focus();
+}
+
+function handleLightboxKeyboard(event) {
+  if (!lightbox?.open) return;
+
+  if (event.key === 'Escape') {
+    event.preventDefault();
+    closeLightbox();
+  } else if (event.key === 'ArrowLeft') {
+    updateLightbox(activePhotoIndex - 1);
+  } else if (event.key === 'ArrowRight') {
+    updateLightbox(activePhotoIndex + 1);
+  }
+}
+
+galleryItems.forEach((item, index) => {
+  item.addEventListener('click', () => openLightbox(index, item));
+});
+
+lightboxPrevious?.addEventListener('click', () => updateLightbox(activePhotoIndex - 1));
+lightboxNext?.addEventListener('click', () => updateLightbox(activePhotoIndex + 1));
+lightboxCloseButtons.forEach(button => button.addEventListener('click', closeLightbox));
+document.addEventListener('keydown', handleLightboxKeyboard);
+
+lightbox?.addEventListener('touchstart', event => {
+  touchStartX = event.changedTouches[0]?.clientX || 0;
+}, { passive: true });
+
+lightbox?.addEventListener('touchend', event => {
+  const touchEndX = event.changedTouches[0]?.clientX || 0;
+  const distance = touchEndX - touchStartX;
+  if (Math.abs(distance) < 50) return;
+  updateLightbox(activePhotoIndex + (distance < 0 ? 1 : -1));
+}, { passive: true });
+
+mobileQuery.addEventListener('change', event => {
+  if (event.matches) closeLightbox();
+});
