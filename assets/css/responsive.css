@@ -277,6 +277,10 @@
     aspect-ratio: 1 / 1;
     scroll-snap-align: start;
   }
+  /* Op mobiel is de laatste kaart een gewone fotoslide: geen “Bekijk alle foto’s”-overlay. */
+  .gallery-more::after,
+  .gallery-more span { display: none; }
+  .gallery-more { cursor: default; }
   .gallery-cta { display: block; margin-top: var(--mobile-space-l); padding-inline: var(--mobile-content-padding); }
   .gallery-cta .button { min-width: 0; }
 
@@ -299,14 +303,18 @@
     aspect-ratio: auto;
   }
   .testimonial-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 285px;
-    min-height: 0;
-    padding: 0;
-    transform: translateY(-12px);
+    display: grid;
+    place-items: center;
+    width: 320px;
+    height: 390px;
+    min-height: 390px;
+    padding: 0 12px;
+    transform: translateY(-8px);
+  }
+  .testimonial-slide {
+    grid-area: 1 / 1;
+    width: 100%;
+    max-height: 100%;
   }
   .quote-icon { width: 46px; margin: 0 0 var(--mobile-space-m); }
   .testimonial h2 { font-size: var(--mobile-h2-size); font-weight: 600; line-height: normal; letter-spacing: 0; }

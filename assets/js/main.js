@@ -212,3 +212,41 @@ lightbox?.addEventListener('touchend', event => {
 mobileQuery.addEventListener('change', event => {
   if (event.matches) closeLightbox();
 });
+
+/* ======================================================
+   QUOTES / CROSSFADE
+====================================================== */
+const quoteRotator = document.querySelector('[data-quote-rotator]');
+const quoteSlides = quoteRotator ? [...quoteRotator.querySelectorAll('[data-quote-slide]')] : [];
+const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+let activeQuoteIndex = 0;
+let quoteRotationTimer = null;
+
+function showQuote(index) {
+  if (quoteSlides.length < 2) return;
+
+  activeQuoteIndex = (index + quoteSlides.length) % quoteSlides.length;
+  quoteSlides.forEach((slide, slideIndex) => {
+    const isActive = slideIndex === activeQuoteIndex;
+    slide.classList.toggle('is-active', isActive);
+    slide.setAttribute('aria-hidden', String(!isActive));
+  });
+}
+
+function stopQuoteRotation() {
+  if (quoteRotationTimer) window.clearInterval(quoteRotationTimer);
+  quoteRotationTimer = null;
+}
+
+function startQuoteRotation() {
+  stopQuoteRotation();
+  if (quoteSlides.length < 2 || reducedMotionQuery.matches || document.hidden) return;
+  quoteRotationTimer = window.setInterval(() => showQuote(activeQuoteIndex + 1), 7500);
+}
+
+if (quoteSlides.length) {
+  showQuote(0);
+  startQuoteRotation();
+  reducedMotionQuery.addEventListener('change', startQuoteRotation);
+  document.addEventListener('visibilitychange', startQuoteRotation);
+}

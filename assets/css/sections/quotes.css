@@ -12,7 +12,29 @@
   background: url('../../brushes/brush-background-quote.svg') center / contain no-repeat;
   color: var(--color-white);
 }
-.testimonial-content { width: 75%; text-align: center; }
+.testimonial-content {
+  display: grid;
+  width: 75%;
+  text-align: center;
+}
+.testimonial-slide {
+  grid-area: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .65s ease, visibility 0s linear .65s;
+}
+.testimonial-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity .65s ease;
+}
 .quote-icon { width: 52px; margin: 0 auto 26px; }
 .testimonial h2 { font-size: 44px; font-style: italic; }
 .quote-line { width: 84px; margin: 25px auto; }
@@ -27,4 +49,8 @@
   font-style: normal;
   letter-spacing: .35em;
   text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-slide { transition: none; }
 }

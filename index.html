@@ -96,20 +96,36 @@
         <button class="gallery-card gallery-hammock" type="button" data-gallery-item data-title="Ontspannen in de tuin" data-description="Een rustige plek om te lezen, luieren en van het buitenleven te genieten."><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-3-hangmat.webp" alt="Hangmat in de groene tuin"></button>
         <button class="gallery-card gallery-terrace" type="button" data-gallery-item data-title="Het gezellige tuinhuis" data-description="Beschut buiten zitten met vrij uitzicht over het Groningse landschap."><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-4-tuinhuis.webp" alt="Gezellig tuinhuis met overdekt terras"></button>
         <button class="gallery-card gallery-bedroom" type="button" data-gallery-item data-title="Comfortabele slaapkamers" data-description="Rustige kamers om na een lange dag volledig tot rust te komen."><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-5-slaapkamer.webp" alt="Comfortabele slaapkamer in De Weyde"></button>
-        <button class="gallery-card gallery-more" type="button" data-gallery-item data-title="Een grote privétuin" data-description="Veel ruimte om buiten te eten, spelen en samen van de natuur te genieten."><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-6-tuin.webp" alt="Grote privétuin met vrij uitzicht"><span><strong>6</strong>Bekijk alle foto's</span></button>
+        <button class="gallery-card gallery-more" type="button" data-gallery-item data-title="Een grote privétuin" data-description="Veel ruimte om buiten te eten, spelen en samen van de natuur te genieten."><img loading="lazy" decoding="async" src="assets/fotos/foto-vakantiehuis-de-weyde-6-tuin.webp" alt="Grote privétuin met vrij uitzicht"><span>Bekijk alle foto's</span></button>
       </div>
       <div class="gallery-cta"><span class="gallery-mobile-hint" aria-hidden="true">Swipe om alle foto's te bekijken</span></div>
     </section>
 
     <!-- Quotes -->
-    <section class="testimonial content-width" aria-label="Gastenreview">
+    <section class="testimonial content-width" aria-label="Gastenreviews" data-quote-rotator>
       <div class="testimonial-shape">
-        <div class="testimonial-content">
-          <img class="quote-icon" src="assets/icons/icon-quote.svg" alt="">
-          <h2>Een plek waar je<br><em>echt tot rust komt</em></h2>
-          <img class="quote-line" src="assets/brushes/brushline-quote.svg" alt="">
-          <blockquote>We hebben met onze kinderen en kleinkinderen een heerlijk weekend gehad. De ruimte, de natuur en de rust maakten het voor iedereen bijzonder.</blockquote>
-          <cite>Familie De Vries</cite>
+        <div class="testimonial-content" aria-live="polite">
+          <article class="testimonial-slide is-active" data-quote-slide>
+            <img class="quote-icon" src="assets/icons/icon-quote.svg" alt="">
+            <h2>Een plek waar je<br><em>echt tot rust komt</em></h2>
+            <img class="quote-line" src="assets/brushes/brushline-quote.svg" alt="">
+            <blockquote>We hebben met onze kinderen en kleinkinderen een heerlijk weekend gehad. De ruimte, de natuur en de rust maakten het voor iedereen bijzonder.</blockquote>
+            <cite>Familie De Vries</cite>
+          </article>
+          <article class="testimonial-slide" data-quote-slide aria-hidden="true">
+            <img class="quote-icon" src="assets/icons/icon-quote.svg" alt="">
+            <h2>Samen genieten<br><em>van alle ruimte</em></h2>
+            <img class="quote-line" src="assets/brushes/brushline-quote.svg" alt="">
+            <blockquote>Een prachtig huis met volop ruimte voor onze hele familie. Vooral de tuin en het vrije uitzicht maakten ons verblijf onvergetelijk.</blockquote>
+            <cite>Demoquote — familie Jansen</cite>
+          </article>
+          <article class="testimonial-slide" data-quote-slide aria-hidden="true">
+            <img class="quote-icon" src="assets/icons/icon-quote.svg" alt="">
+            <h2>Van binnen sfeervol,<br><em>buiten heerlijk vrij</em></h2>
+            <img class="quote-line" src="assets/brushes/brushline-quote.svg" alt="">
+            <blockquote>Alles was tot in de puntjes verzorgd. We voelden ons direct thuis en hebben iedere dag genoten van de rust rondom De Weyde.</blockquote>
+            <cite>Demoquote — familie Smit</cite>
+          </article>
         </div>
       </div>
     </section>
@@ -271,24 +287,26 @@
     <div class="photo-lightbox__backdrop" data-lightbox-close></div>
     <div class="photo-lightbox__panel" role="document">
       <button class="photo-lightbox__close" type="button" data-lightbox-close aria-label="Fotogalerij sluiten">
-        <span aria-hidden="true">×</span>
+        <img src="assets/icons/close-white.svg" alt="" aria-hidden="true">
       </button>
-      <button class="photo-lightbox__nav photo-lightbox__nav--previous" type="button" data-lightbox-previous aria-label="Vorige foto">
-        <span aria-hidden="true">←</span>
-      </button>
-      <figure class="photo-lightbox__figure">
-        <div class="photo-lightbox__image-wrap">
-          <img class="photo-lightbox__image" data-lightbox-image src="" alt="">
-        </div>
-        <figcaption class="photo-lightbox__caption">
-          <h2 id="lightbox-title" data-lightbox-title></h2>
-          <p data-lightbox-description></p>
-          <span class="photo-lightbox__counter" data-lightbox-counter aria-live="polite"></span>
-        </figcaption>
-      </figure>
-      <button class="photo-lightbox__nav photo-lightbox__nav--next" type="button" data-lightbox-next aria-label="Volgende foto">
-        <span aria-hidden="true">→</span>
-      </button>
+      <div class="photo-lightbox__heading">
+        <h2 id="lightbox-title" data-lightbox-title></h2>
+        <p data-lightbox-description></p>
+      </div>
+      <div class="photo-lightbox__stage">
+        <button class="photo-lightbox__nav photo-lightbox__nav--previous" type="button" data-lightbox-previous aria-label="Vorige foto">
+          <img src="assets/icons/arrow-white-left.svg" alt="" aria-hidden="true">
+        </button>
+        <figure class="photo-lightbox__figure">
+          <div class="photo-lightbox__image-wrap">
+            <img class="photo-lightbox__image" data-lightbox-image src="" alt="">
+          </div>
+        </figure>
+        <button class="photo-lightbox__nav photo-lightbox__nav--next" type="button" data-lightbox-next aria-label="Volgende foto">
+          <img src="assets/icons/arrow-white-right.svg" alt="" aria-hidden="true">
+        </button>
+      </div>
+      <span class="photo-lightbox__counter" data-lightbox-counter aria-live="polite"></span>
     </div>
   </dialog>
 
