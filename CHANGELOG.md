@@ -2,6 +2,10 @@
 
 ## v3.8.1 — Ontdek Westerwolde in homepage-stijl
 
+- Hero op desktop en tablet compacter gemaakt.
+- Favorietenslider rechts uit de contentkolom laten doorlopen, met behoud van de positie van de navigatieknoppen.
+- Mobiele favorietenslider zonder controls en met swipe-instructie uitgevoerd.
+- Getinte achtergrond van “Ervaar het zelf” doorgetrokken tot achter de aansluiting op de footer.
 - “Door ons uitgelicht” omgebouwd naar een echte horizontale slider met knoppen, swipe/trackpad en scroll-snap.
 - Pijliconen onder “Nog meer te beleven” direct op 10px afstand van de linktekst geplaatst.
 - Vinkjes onder “Nog meer te beleven” vervangen door proportionele pijliconen met hoverbeweging en accentkleur.
