@@ -214,6 +214,42 @@ mobileQuery.addEventListener('change', event => {
 });
 
 /* ======================================================
+   UITGELICHTE PLEKKEN / SLIDER
+====================================================== */
+const favoritesSlider = document.querySelector('[data-favorites-slider]');
+const favoritesTrack = favoritesSlider?.querySelector('[data-favorites-track]');
+const favoritesPrevious = favoritesSlider?.querySelector('[data-favorites-previous]');
+const favoritesNext = favoritesSlider?.querySelector('[data-favorites-next]');
+
+function updateFavoritesControls() {
+  if (!favoritesTrack) return;
+
+  const maximumScroll = Math.max(0, favoritesTrack.scrollWidth - favoritesTrack.clientWidth);
+  favoritesPrevious?.toggleAttribute('disabled', favoritesTrack.scrollLeft <= 2);
+  favoritesNext?.toggleAttribute('disabled', favoritesTrack.scrollLeft >= maximumScroll - 2);
+}
+
+function moveFavorites(direction) {
+  if (!favoritesTrack) return;
+
+  const card = favoritesTrack.querySelector('.place-card');
+  const gap = Number.parseFloat(getComputedStyle(favoritesTrack).columnGap) || 0;
+  const distance = (card?.getBoundingClientRect().width || favoritesTrack.clientWidth) + gap;
+  favoritesTrack.scrollBy({
+    left: direction * distance,
+    behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+  });
+}
+
+if (favoritesTrack) {
+  favoritesPrevious?.addEventListener('click', () => moveFavorites(-1));
+  favoritesNext?.addEventListener('click', () => moveFavorites(1));
+  favoritesTrack.addEventListener('scroll', updateFavoritesControls, { passive: true });
+  window.addEventListener('resize', updateFavoritesControls);
+  updateFavoritesControls();
+}
+
+/* ======================================================
    QUOTES / CROSSFADE
 ====================================================== */
 const quoteRotator = document.querySelector('[data-quote-rotator]');

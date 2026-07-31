@@ -1,4 +1,4 @@
-# De Weyde homepage
+# De Weyde website — v3.8.1
 
 Statische frontend van de homepage van vakantiehuis De Weyde.
 
@@ -57,3 +57,10 @@ Deze cleanup is bedoeld als structurele optimalisatie. Layout, breakpoints, anim
 ## Fotogalerij
 
 De kaarten in `[data-gallery]` vormen de databron voor zowel de mobiele slider als de desktop-lightbox. Elke kaart bevat een afbeelding, `data-title` en een optionele `data-description`. Hierdoor kan de inhoud later rechtstreeks vanuit WordPress worden opgebouwd zonder de lightboxlogica te wijzigen.
+
+
+## Nieuwe pagina in v3.8.0
+
+- `ontdek-westerwolde.html`: inspiratiepagina voor de omgeving.
+- Navigatie en logo zijn geschikt gemaakt voor meerdere pagina’s.
+- De gebruikte omgevingsfoto’s zijn voorlopig hergebruikte projectfoto’s en kunnen later worden vervangen door locatiespecifieke fotografie.

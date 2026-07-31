@@ -1,5 +1,26 @@
 # Changelog
 
+## v3.8.1 — Ontdek Westerwolde in homepage-stijl
+
+- “Door ons uitgelicht” omgebouwd naar een echte horizontale slider met knoppen, swipe/trackpad en scroll-snap.
+- Pijliconen onder “Nog meer te beleven” direct op 10px afstand van de linktekst geplaatst.
+- Vinkjes onder “Nog meer te beleven” vervangen door proportionele pijliconen met hoverbeweging en accentkleur.
+- CTA “Bekijk de vakantiewoning” gewijzigd naar een volle primaire knop.
+- Labels op uitgelichte plekken vervangen door de inhoudelijke categorie; externe links hernoemd naar “Ga naar website”.
+- Afbeelding bij “Persoonlijke tips” voorzien van een actuele inline SVG-clipPath.
+- “Ervaar het zelf” omgebouwd naar dezelfde tweekolomsstijl, met tekst links en een gemaskeerde landschapsfoto rechts.
+- Cijferblok direct onder de hero geplaatst.
+- “Buitenleven begint hier” voorzien van dezelfde getinte achtergrond als “Ontdek De Weyde”.
+- De foto uit “Persoonlijke tips” geplaatst in de grootste SVG-beeldvorm van de intro.
+- Introcollage gebruikt de actuele inline SVG-clipPaths uit “Waarom De Weyde” in plaats van de verouderde vooraf gemaskeerde PNG-bestanden.
+- Hero gelijkgetrokken met de homepage, inclusief brush-mask, typografie en kleurgebruik.
+- Nieuwe panoramische landschapsfoto van Westerwolde toegevoegd.
+- Eyebrow “Buitenleven begint hier” ingesteld op `#BA7548`.
+- Introcollage voorzien van dezelfde organische beeldmaskers als “Waarom De Weyde”.
+- Westerwolde-cijfers omgebouwd naar het iconenraster onder de homepage-hero.
+- “Nog meer te beleven” visueel gelijkgetrokken met “Ontdek het vakantiehuis”.
+- Responsive presentatie voor desktop, tablet en mobiel verfijnd.
+
 ## v3.7.2 — Quotes blijven wisselen bij verminderde beweging
 
 - De quote-rotatie blijft actief wanneer `prefers-reduced-motion: reduce` is ingesteld, waaronder op iPhones met “Verminder beweging”.
@@ -84,3 +105,13 @@
 - JavaScript syntactisch gecontroleerd met Node.js.
 - CSS-accolades gecontroleerd.
 - Geen bewuste visuele wijzigingen aangebracht.
+
+
+## 3.8.0
+
+- Nieuwe pagina **Ontdek Westerwolde** toegevoegd.
+- Menu-item Omgeving hernoemd en doorgelinkt.
+- Logo in desktop- en mobiel menu linkt naar de homepage.
+- Actieve navigatiestatus toegevoegd op de nieuwe pagina.
+- Intro, feitenblok, favorieten, categoriekaarten, persoonlijk tipsblok en CTA toegevoegd.
+- Responsive opzet voor desktop, tablet en mobiel.
