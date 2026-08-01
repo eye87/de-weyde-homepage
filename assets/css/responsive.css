@@ -413,7 +413,7 @@
     row-gap: 22px;
     overflow: visible;
   }
-  .masked-photo { overflow: hidden; }
+  .masked-photo { overflow: visible; }
   .masked-photo__image { object-fit: cover; }
   .mask-1 { width: clamp(250px, 72vw, 290px); }
   .mask-2 { width: min(172px, 94%); }

@@ -2,11 +2,22 @@
 
 ## v3.8.1 — Ontdek Westerwolde in homepage-stijl
 
+- SVG-viewports van alle organisch gemaskeerde foto’s op zichtbaar gezet, zodat de subtiele zoom niet rechthoekig wordt afgesneden; bounce van secundaire foto’s vervangen door een vaste positie met rustige interne beeldzoom.
+- Cijferblok onder de hero teruggebracht naar de rustige uitvoering zonder kaartachtergronden en extra labels; secundaire foto’s hergebruiken nu exact `environment-photo-clip-2`; achtergrond van “Ervaar het zelf” loopt weer door achter de footer.
+- Footer-aansluiting hersteld, beide secundaire foto’s voorzien van een SVG-clipPath en iets lager geplaatst; CTA-pijlen aangepast naar wit en `#BA7548`.
+- “Persoonlijke tips” en “Ervaar het zelf” uitgebreid met een asymmetrisch fotoduo; op mobiel staan beide beeldgroepen boven de tekst.
+- Hero vernieuwd met een sfeervol Westerwolds landschap en karakteristiek gebouw rechts in beeld.
+- Cijferblok verrijkt met korte belevingslabels, getinte kaarten en subtiele interactie.
+- Rechthoekige bronfoto’s in de intro geplaatst, zodat alleen de originele SVG-paden van “Waarom De Weyde” de beeldvorm bepalen.
+- Sliderbediening van “Door ons uitgelicht” onder de kaarten geplaatst.
+- Favorietenbadges vier pixels lager en tien pixels breder gemaakt.
+- Pijlen toegevoegd aan de ankerknoppen in de hero en bij “Persoonlijke tips”, met de juiste scrollrichting.
+- Zes consistente line-iconen toegevoegd aan “Nog meer te beleven” en de aantallen tips natuurlijk verdeeld over vier en vijf items.
 - Hero-CTA “Bekijk onze favorieten” toegevoegd met smooth-scrolldoel bij de favorietenslider.
 - Intro-, favorieten- en persoonlijke-tipbeelden vervangen door inhoudelijk passende, geoptimaliseerde omgevingsfotografie.
 - Categorielabels op favorietenkaarten omgebouwd tot duidelijke accentbadges; afstandslabels verwijderd.
 - Externe links op favorietenkaarten uitgevoerd als open secundaire knoppen.
-- Kop en beschrijving van “Nog meer te beleven” opnieuw uitgebalanceerd en alle zes categorieën uitgebreid naar vijf tips.
+- Kop en beschrijving van “Nog meer te beleven” opnieuw uitgebalanceerd en alle zes categorieën inhoudelijk uitgebreid.
 - Lijstitems voorzien van subtiele accentpunten; pijlen verschijnen alleen bij hover of toetsenbordfocus.
 - Persoonlijke-tipsectie uitgebreid met een CTA naar de favorieten.
 - Beeld bij “Ervaar het zelf” vervangen door de bestaande homepagebanner.

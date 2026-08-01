@@ -9,5 +9,6 @@
   .brand:hover img,
   .footer-brand:hover > img,
   .hero:hover .hero-media,
-  .masked-photo:hover .masked-photo__image { transform: none !important; }
+  .masked-photo:hover .masked-photo__image,
+  .guide-note__secondary:hover image { transform: none !important; }
 }
