@@ -2,6 +2,14 @@
 
 ## v3.8.1 — Ontdek Westerwolde in homepage-stijl
 
+- Hero-CTA “Bekijk onze favorieten” toegevoegd met smooth-scrolldoel bij de favorietenslider.
+- Intro-, favorieten- en persoonlijke-tipbeelden vervangen door inhoudelijk passende, geoptimaliseerde omgevingsfotografie.
+- Categorielabels op favorietenkaarten omgebouwd tot duidelijke accentbadges; afstandslabels verwijderd.
+- Externe links op favorietenkaarten uitgevoerd als open secundaire knoppen.
+- Kop en beschrijving van “Nog meer te beleven” opnieuw uitgebalanceerd en alle zes categorieën uitgebreid naar vijf tips.
+- Lijstitems voorzien van subtiele accentpunten; pijlen verschijnen alleen bij hover of toetsenbordfocus.
+- Persoonlijke-tipsectie uitgebreid met een CTA naar de favorieten.
+- Beeld bij “Ervaar het zelf” vervangen door de bestaande homepagebanner.
 - Hero op desktop en tablet compacter gemaakt.
 - Favorietenslider rechts uit de contentkolom laten doorlopen, met behoud van de positie van de navigatieknoppen.
 - Mobiele favorietenslider zonder controls en met swipe-instructie uitgevoerd.
