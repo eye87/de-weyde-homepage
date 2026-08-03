@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Bekijk de beschikbaarheid van De Weyde en vraag vrijblijvend een verblijf aan. Je reservering is definitief na bevestiging per e-mail.">
+  <title>Reservering aanvragen — De Weyde</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components/buttons.css">
+  <link rel="stylesheet" href="assets/css/components/menu.css">
+  <link rel="stylesheet" href="assets/css/components/footer.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/sections/contact.css">
+  <link rel="stylesheet" href="assets/css/sections/reserveren.css">
+  <link rel="stylesheet" href="assets/css/motion.css">
+</head>
+<body class="contact-page reservation-page">
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="De Weyde home"><img src="assets/brand/logo-de-weyde-kleur.svg" alt="De Weyde"></a>
+      <nav class="desktop-nav" aria-label="Hoofdnavigatie"><a href="index.html#vakantiehuis">Vakantiewoning</a><a href="ontdek-westerwolde.html">Ontdek Westerwolde</a><a href="contact.html">Contact</a></nav>
+      <a class="button button-primary header-cta" href="reserveren.html" aria-current="page">Reservering aanvragen</a>
+      <button class="menu-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-menu"><img src="assets/mobile/icon-menu-mobile.svg" alt=""></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobiel menu">
+    <button class="mobile-close" type="button" aria-label="Menu sluiten"><img src="assets/mobile/mobile-menu-close.svg" alt="" aria-hidden="true"></button>
+    <div class="mobile-menu__inner">
+      <a class="mobile-menu-logo-link" href="index.html" aria-label="De Weyde home"><img class="mobile-menu-logo" src="assets/brand/logo-de-weyde-wit.svg" alt="De Weyde"></a>
+      <nav aria-label="Mobiele navigatie"><a href="index.html#vakantiehuis"><span>Vakantiewoning</span><img src="assets/icons/icon-arrow-right.svg" alt="" aria-hidden="true"></a><a href="ontdek-westerwolde.html"><span>Ontdek Westerwolde</span><img src="assets/icons/icon-arrow-right.svg" alt="" aria-hidden="true"></a><a href="contact.html"><span>Contact</span><img src="assets/icons/icon-arrow-right.svg" alt="" aria-hidden="true"></a></nav>
+      <a class="mobile-menu__cta" href="reserveren.html" aria-current="page">Reservering aanvragen</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="contact-intro section-shell section-tinted" aria-labelledby="reservation-title">
+      <div class="contact-intro__inner content-width">
+        <p class="eyebrow">Reserveer je verblijf</p>
+        <h1 id="reservation-title">Vraag je verblijf aan</h1>
+        <p>Bekijk eerst de beschikbaarheid en stuur daarna je aanvraag. Dit is geen directe boeking: je verblijf is pas definitief nadat je van ons een bevestiging per e-mail hebt ontvangen.</p>
+      </div>
+      <img class="hero-brush-mobile" src="assets/mobile/hero-brush-mobile.svg" alt="" aria-hidden="true">
+      <picture class="contact-intro__brush" aria-hidden="true"><img src="assets/brushes/hero-overlay.svg" alt=""></picture>
+    </section>
+
+    <div class="reservation-content content-width">
+      <section class="reservation-step" id="beschikbaarheid" aria-labelledby="availability-title">
+        <div class="reservation-step__heading">
+          <p class="reservation-step__number">Stap 1</p>
+          <p class="eyebrow">Plan je verblijf</p>
+          <h2 id="availability-title">Bekijk de beschikbaarheid</h2>
+          <p>Controleer in de agenda of je gewenste periode nog vrij is. De agenda wordt hier getoond zodra de Google Agenda van De Weyde is gekoppeld.</p>
+        </div>
+        <div class="calendar-placeholder" data-calendar-embed role="status" aria-label="Beschikbaarheidsagenda nog niet gekoppeld">
+          <div class="calendar-placeholder__icon" aria-hidden="true"><span></span></div>
+          <h3>De beschikbaarheidsagenda verschijnt hier</h3>
+          <p>De koppeling met Google Agenda wordt nog toegevoegd. Je kunt het aanvraagformulier alvast bekijken.</p>
+        </div>
+      </section>
+
+      <section class="reservation-step reservation-step--form" aria-labelledby="request-title">
+        <div class="reservation-step__heading">
+          <p class="reservation-step__number">Stap 2</p>
+          <p class="eyebrow">Vertel ons je wensen</p>
+          <h2 id="request-title">Vraag je verblijf aan</h2>
+          <p>Vul je gegevens en voorkeuren in. We bekijken je aanvraag en nemen per e-mail contact met je op.</p>
+        </div>
+        <div class="contact-form-wrap reservation-form-wrap">
+          <form class="contact-form reservation-form">
+            <div class="reservation-form__grid">
+              <div class="contact-form__row"><label for="reservation-name">Naam<span aria-hidden="true">*</span></label><input id="reservation-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="contact-form__row"><label for="reservation-email">E-mail<span aria-hidden="true">*</span></label><input id="reservation-email" name="email" type="email" autocomplete="email" required></div>
+              <div class="contact-form__row"><label for="reservation-phone">Telefoonnummer<span aria-hidden="true">*</span></label><input id="reservation-phone" name="phone" type="tel" autocomplete="tel" required></div>
+              <div class="contact-form__row"><label for="reservation-guests">Aantal gasten<span aria-hidden="true">*</span></label><input id="reservation-guests" name="guests" type="number" min="1" max="12" inputmode="numeric" required></div>
+              <div class="contact-form__row"><label for="reservation-arrival">Gewenste aankomstdatum<span aria-hidden="true">*</span></label><input id="reservation-arrival" name="arrival" type="date" required></div>
+              <div class="contact-form__row"><label for="reservation-departure">Gewenste vertrekdatum<span aria-hidden="true">*</span></label><input id="reservation-departure" name="departure" type="date" required></div>
+            </div>
+
+            <fieldset class="reservation-options">
+              <legend>Extra’s voor je verblijf <span>optioneel</span></legend>
+              <div class="reservation-options__grid">
+                <label><input type="checkbox" name="extras" value="opgemaakte-bedden"><span class="reservation-option__name">Opgemaakte bedden bij aankomst</span><span class="reservation-option__price">€ 12,50 per bed</span></label>
+                <label><input type="checkbox" name="extras" value="bedlinnen"><span class="reservation-option__name">Bedlinnen</span><span class="reservation-option__price">€ 8,95 per set</span></label>
+                <label><input type="checkbox" name="extras" value="handdoekenpakket"><span class="reservation-option__name">Handdoekenpakket</span><span class="reservation-option__price">€ 4,50 p.p.</span></label>
+                <label><input type="checkbox" name="extras" value="openhaardhout"><span class="reservation-option__name">Extra openhaardhout</span><span class="reservation-option__price">€ 15 per kruiwagen</span></label>
+                <label><input type="checkbox" name="extras" value="boodschappenservice"><span class="reservation-option__name">Boodschappenservice</span><span class="reservation-option__price">€ 10</span></label>
+                <label><input type="checkbox" name="extras" value="fietsen-huren"><span class="reservation-option__name">Fietsen huren</span><span class="reservation-option__price">vanaf € 9,50 per dag</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="reservation-options">
+              <legend>Ontbijt in het vakantiehuis <span>optioneel</span></legend>
+              <p>Een verzorgd ontbijt is alleen vooraf te reserveren.</p>
+              <label><input type="checkbox" name="breakfast" value="verzorgd-ontbijt"><span class="reservation-option__name">Verzorgde ontbijtmand</span><span class="reservation-option__price">vanaf € 25 per twee personen</span></label>
+            </fieldset>
+
+            <fieldset class="reservation-options">
+              <legend>Activiteiten <span>optioneel</span></legend>
+              <div class="reservation-options__grid">
+                <label><input type="checkbox" name="activities" value="broez-tocht"><span class="reservation-option__name">Broez-tocht door Westerwolde</span><span class="reservation-option__price">vanaf € 38,50 voor 3 uur</span></label>
+                <label><input type="checkbox" name="activities" value="workshop"><span class="reservation-option__name">Workshop</span><span class="reservation-option__price">op aanvraag</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="reservation-options">
+              <legend>Bier &amp; arrangementen <span>optioneel</span></legend>
+              <label><input type="checkbox" name="arrangements" value="bier-proeven"><span class="reservation-option__name">Bier proeven en drinken</span><span class="reservation-option__price">op aanvraag</span></label>
+            </fieldset>
+
+            <div class="contact-form__row"><label for="reservation-message">Bericht</label><textarea id="reservation-message" name="message" rows="6" placeholder="Vertel ons gerust meer over je verblijf of je wensen."></textarea></div>
+            <p class="reservation-confirmation"><strong>Goed om te weten:</strong> dit formulier is een aanvraag. Je reservering is pas definitief nadat je per e-mail een bevestiging van De Weyde hebt ontvangen.</p>
+            <button class="button button-primary" type="button">Reserveringsaanvraag versturen</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-shell section-shell"><picture class="footer-illustration" aria-hidden="true"><source media="(max-width:760px)" srcset="assets/illustraties/illustratie-footer-mobile.svg"><img loading="lazy" decoding="async" src="assets/illustraties/illustratie-footer.svg" alt=""></picture><div class="footer-main content-width"><div class="footer-brand"><img src="assets/brand/logo-de-weyde-wit.svg" alt="De Weyde"><p>Een sfeervol vakantiehuis voor 2 tot 12 personen, midden in het groene landschap van Westerwolde.</p><a class="button button-primary" href="reserveren.html" aria-current="page">Reservering aanvragen</a></div><div class="footer-links"><h2>Vakantiehuis</h2><a href="index.html#vakantiehuis"><img src="assets/icons/icon-arrow-right.svg" alt=""><span>Over De Weyde</span></a><a href="index.html#vakantiehuis"><img src="assets/icons/icon-arrow-right.svg" alt=""><span>Foto’s en voorzieningen</span></a><a href="prijzen.html"><img src="assets/icons/icon-arrow-right.svg" alt=""><span>Prijzen en beschikbaarheid</span></a><a href="ontdek-westerwolde.html"><img src="assets/icons/icon-arrow-right.svg" alt=""><span>Ontdek Westerwolde</span></a></div><div class="footer-contact"><h2>Contact</h2><div class="contact-row contact-address"><img src="assets/icons/icon-locatie.svg" alt=""><span>De Weyde<br>Burg. Buiskoolweg 35<br>9541 XM Vlagtwedde</span></div><div class="contact-row"><img src="assets/icons/icon-telefoon.svg" alt=""><a href="tel:+31683521359">06-83521359</a></div><div class="contact-row"><img src="assets/icons/icon-telefoon.svg" alt=""><a href="tel:+31610228549">06-10228549</a></div></div></div></div>
+    <div class="footer-bottom content-width"><span>© 2026 De Weyde</span><nav><a href="privacyverklaring.html">Privacyverklaring</a><a href="algemene-voorwaarden.html">Algemene voorwaarden</a><a href="#">Website door <em>Eye Entertainment</em></a></nav></div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

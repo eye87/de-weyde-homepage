@@ -1,0 +1,19 @@
+/* ======================================================
+   JURIDISCHE CONTENTPAGINA'S
+====================================================== */
+
+.legal-content { max-width: 900px; padding: 105px 0 145px; }
+.legal-notice { margin-bottom: 58px; padding: 24px 28px; border-left: 3px solid var(--color-accent); border-radius: 0 10px 10px 0; background: var(--color-tint); color: #314039; font-size: 14px; line-height: 1.75; }
+.legal-section + .legal-section { margin-top: 52px; }
+.legal-section h2 { margin-bottom: 19px; font-size: 32px; }
+.legal-section p { color: #17231d; line-height: 1.85; }
+.legal-section p:last-child { margin-bottom: 0; }
+.legal-section a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; }
+
+@media(max-width:760px){
+  .legal-content { width: calc(100% - 60px); padding: 75px 0 105px; }
+  .legal-notice { margin-bottom: 45px; padding: 20px 22px; }
+  .legal-section + .legal-section { margin-top: 42px; }
+  .legal-section h2 { margin-bottom: 15px; font-size: var(--mobile-h2-size); }
+  .legal-section p { font-size: var(--mobile-body-size); line-height: var(--mobile-body-line-height); }
+}

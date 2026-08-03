@@ -1,0 +1,52 @@
+/* ======================================================
+   RESERVEREN
+====================================================== */
+
+.reservation-content { padding: 112px 0 150px; }
+.reservation-step + .reservation-step { margin-top: 120px; }
+.reservation-step__heading { max-width: 720px; }
+.reservation-step__number { display: inline-flex; margin: 0 0 24px; padding: 8px 15px; border-radius: 999px; background: var(--color-green); color: var(--color-white); font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.reservation-step__heading h2 { margin-top: 8px; font-size: clamp(40px,4vw,56px); }
+.reservation-step__heading > p:last-child { margin: 22px 0 0; color: #56645d; line-height: 1.8; }
+
+.calendar-placeholder { display: grid; min-height: 366px; margin-top: 50px; padding: 50px; place-content: center; justify-items: center; border: 1px solid rgba(6,49,29,.15); border-radius: var(--radius-section); background: var(--color-tint); text-align: center; }
+.calendar-placeholder__icon { position: relative; width: 72px; height: 66px; margin-bottom: 25px; border: 2px solid var(--color-green); border-radius: 12px; }
+.calendar-placeholder__icon::before { content:""; position:absolute; top:14px; right:0; left:0; border-top:2px solid var(--color-green); }
+.calendar-placeholder__icon::after { content:""; position:absolute; top:-7px; left:17px; width:6px; height:14px; border-radius:4px; background:var(--color-green); box-shadow:30px 0 0 var(--color-green); }
+.calendar-placeholder__icon span { position:absolute; top:27px; left:16px; width:8px; height:8px; border-radius:2px; background:rgba(6,49,29,.25); box-shadow:16px 0 0 rgba(6,49,29,.25),32px 0 0 rgba(6,49,29,.25),0 16px 0 rgba(6,49,29,.25),16px 16px 0 var(--color-accent),32px 16px 0 rgba(6,49,29,.25); }
+.calendar-placeholder h3 { font-size: 27px; }
+.calendar-placeholder p { max-width: 500px; margin: 14px 0 0; color: #64716b; line-height: 1.7; }
+
+.reservation-step--form { display: grid; grid-template-columns: .72fr 1.28fr; gap: 80px; align-items: start; }
+.reservation-form-wrap { padding: 48px; }
+.reservation-form { margin-top: 0; }
+.reservation-form__grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:23px 20px; }
+.reservation-options { display:grid; gap:15px; margin:8px 0 0; padding:24px; border:1px solid rgba(6,49,29,.14); border-radius:12px; }
+.reservation-options legend { padding:0 8px; color:var(--color-green); font:600 18px Lora,Georgia,serif; }
+.reservation-options legend span { margin-left:6px; color:#728078; font:500 12px Inter,Arial,sans-serif; letter-spacing:.04em; text-transform:uppercase; }
+.reservation-options > p { margin:-5px 0 0; color:#68736d; font-size:14px; line-height:1.6; }
+.reservation-options__grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:13px 20px; }
+.reservation-options label { display:grid; grid-template-columns:20px minmax(0,1fr); gap:10px; align-items:start; color:#25332c; font-size:14px; font-weight:500; line-height:1.5; cursor:pointer; }
+.reservation-options input[type="checkbox"] { width:18px; height:18px; margin:1px 0 0; accent-color:var(--color-green); }
+.contact-form .reservation-option__price { grid-column:2; margin-top:-5px; color:#111; font-size:12px; font-weight:400; line-height:1.45; }
+.reservation-confirmation { margin:3px 0 0; padding:18px 20px; border-left:3px solid var(--color-accent); border-radius:0 8px 8px 0; background:rgba(255,255,255,.65); color:#425149; font-size:14px; line-height:1.7; }
+.reservation-confirmation strong { color:var(--color-green); }
+
+@media(max-width:1100px){
+  .reservation-step--form { grid-template-columns:1fr; gap:48px; }
+  .reservation-step--form .reservation-step__heading { max-width:720px; }
+}
+
+@media(max-width:760px){
+  .reservation-content { width:calc(100% - 60px); padding:78px 0 100px; }
+  .reservation-step + .reservation-step { margin-top:80px; }
+  .reservation-step__number { margin-bottom:18px; }
+  .reservation-step__heading h2 { font-size:34px; }
+  .calendar-placeholder { min-height:298px; margin-top:35px; padding:38px 24px; }
+  .calendar-placeholder h3 { font-size:23px; }
+  .reservation-step--form { gap:35px; }
+  .reservation-form-wrap { margin-inline:-10px; padding:35px 24px 40px; }
+  .reservation-form__grid,
+  .reservation-options__grid { grid-template-columns:1fr; }
+  .reservation-options { padding:21px 17px; }
+}
