@@ -17,6 +17,8 @@
 .environment-intro__copy p { margin-bottom:20px; line-height:1.8; color:#17231d; }
 .environment-intro__visual { position:relative; min-height:625px; }
 .environment-usps .usp-item { padding-inline:20px; }
+.environment-usps .usp-item img { width:48px; height:48px; margin-bottom:20px; }
+.environment-usps .usp-item strong { color:var(--color-green); font-size:25px; line-height:1.18; }
 .environment-usps .usp-item span { max-width:230px; margin:9px auto 0; line-height:1.45; }
 .environment-section { padding:125px 0; }
 .environment-section.section-tinted { margin-top:20px; }

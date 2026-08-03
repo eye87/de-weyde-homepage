@@ -235,6 +235,8 @@
   .usp-item img { width: 34px; height: 34px; margin-bottom: 12px; }
   .usp-item strong { font-size: 30px; }
   .usp-item span { font-size: 14px; }
+  .environment-usps .usp-item img { width: 42px; height: 42px; margin-bottom: 14px; }
+  .environment-usps .usp-item strong { font-size: 21px; line-height: 1.2; }
 
   .discover {
     padding: var(--mobile-space-xl) 0;
