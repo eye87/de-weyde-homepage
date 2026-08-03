@@ -61,9 +61,9 @@ function handleMenuKeyboard(event) {
 }
 
 function syncFacilitiesForViewport() {
-  document.querySelectorAll('.facility').forEach((item, index) => {
+  document.querySelectorAll('.facility, .category-card').forEach((item, index) => {
     const button = item.querySelector('button');
-    const arrow = item.querySelector('.facility-arrow');
+    const arrow = item.querySelector('.facility-arrow, .category-card__arrow');
 
     if (!mobileQuery.matches) {
       item.classList.toggle('is-open', index === 0);
@@ -89,18 +89,18 @@ document.addEventListener('keydown', handleMenuKeyboard);
 
 mobileQuery.addEventListener('change', syncFacilitiesForViewport);
 
-document.querySelectorAll('.facility button').forEach(button => {
+document.querySelectorAll('.facility button, .category-card__toggle').forEach(button => {
   button.addEventListener('click', () => {
     if (!mobileQuery.matches) return;
 
-    const item = button.closest('.facility');
+    const item = button.closest('.facility, .category-card');
     if (!item) return;
 
     const open = !item.classList.contains('is-open');
     item.classList.toggle('is-open', open);
     button.setAttribute('aria-expanded', String(open));
 
-    const arrow = button.querySelector('.facility-arrow');
+    const arrow = button.querySelector('.facility-arrow, .category-card__arrow');
     if (arrow) arrow.src = `assets/icons/arrow-${open ? 'up' : 'down'}.svg`;
   });
 });

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Neem contact op met De Weyde in Vlagtwedde voor vragen over de vakantiewoning, kwekerij of bierbrouwerij.">
+  <title>Contact — De Weyde</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components/buttons.css">
+  <link rel="stylesheet" href="assets/css/components/menu.css">
+  <link rel="stylesheet" href="assets/css/components/footer.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/sections/contact.css">
+  <link rel="stylesheet" href="assets/css/motion.css">
+</head>
+<body class="contact-page">
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="De Weyde home"><img src="assets/brand/logo-de-weyde-kleur.svg" alt="De Weyde"></a>
+      <nav class="desktop-nav" aria-label="Hoofdnavigatie">
+        <a href="index.html#vakantiehuis">Vakantiewoning</a>
+        <a href="ontdek-westerwolde.html">Ontdek Westerwolde</a>
+        <a class="is-active" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <a class="button button-primary header-cta" href="index.html#reserveren">Reservering aanvragen</a>
+      <button class="menu-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-menu"><img src="assets/mobile/icon-menu-mobile.svg" alt=""></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobiel menu">
+    <button class="mobile-close" type="button" aria-label="Menu sluiten"><img src="assets/mobile/mobile-menu-close.svg" alt="" aria-hidden="true"></button>
+    <div class="mobile-menu__inner">
+      <a class="mobile-menu-logo-link" href="index.html" aria-label="De Weyde home"><img class="mobile-menu-logo" src="assets/brand/logo-de-weyde-wit.svg" alt="De Weyde"></a>
+      <nav aria-label="Mobiele navigatie">
+        <a href="index.html#vakantiehuis"><span>Vakantiewoning</span><img src="assets/icons/icon-arrow-right.svg" alt="" aria-hidden="true"></a>
+        <a href="ontdek-westerwolde.html"><span>Ontdek Westerwolde</span><img src="assets/icons/icon-arrow-right.svg" alt="" aria-hidden="true"></a>
+        <a href="contact.html" aria-current="page"><span>Contact</span><img src="assets/icons/icon-arrow-right.svg" alt="" aria-hidden="true"></a>
+      </nav>
+      <a class="mobile-menu__cta" href="index.html#reserveren">Reservering aanvragen</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="contact-intro section-shell section-tinted" aria-labelledby="contact-title">
+      <div class="contact-intro__inner content-width">
+        <p class="eyebrow">Neem contact op</p>
+        <h1 id="contact-title">We horen graag van je</h1>
+        <p>Heb je een vraag over de vakantiewoning, kwekerij of bierbrouwerij? Stuur ons gerust een bericht. We nemen zo spoedig mogelijk contact met je op.</p>
+      </div>
+      <img class="hero-brush-mobile" src="assets/mobile/hero-brush-mobile.svg" alt="" aria-hidden="true">
+      <picture class="contact-intro__brush" aria-hidden="true"><img src="assets/brushes/hero-overlay.svg" alt=""></picture>
+    </section>
+
+    <section class="contact-section content-width" aria-label="Contactgegevens en contactformulier">
+      <div class="contact-details">
+        <p class="eyebrow">De Weyde</p>
+        <h2>Harm en Marende</h2>
+        <div class="contact-details__list">
+          <div class="contact-detail">
+            <img src="assets/icons/icon-locatie.svg" alt="" aria-hidden="true">
+            <div><strong>Adres</strong><address>Burg. Buiskoolweg 35<br>9541 XM Vlagtwedde</address><p>Buurtschap Over de Dijk, tussen Vlagtwedde en Sellingen</p></div>
+          </div>
+          <div class="contact-detail">
+            <img src="assets/icons/icon-telefoon.svg" alt="" aria-hidden="true">
+            <div><strong>Vakantiewoning</strong><a href="tel:+31683521359">06-83521359</a></div>
+          </div>
+          <div class="contact-detail">
+            <img src="assets/icons/icon-telefoon.svg" alt="" aria-hidden="true">
+            <div><strong>Kwekerij en bierbrouwerij</strong><a href="tel:+31610228549">06-10228549</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <p class="eyebrow">Stuur een bericht</p>
+        <h2>Hoe kunnen we helpen?</h2>
+        <form class="contact-form">
+          <div class="contact-form__row">
+            <label for="name">Naam<span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="contact-form__row">
+            <label for="email">E-mail<span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="contact-form__row">
+            <label for="subject">Onderwerp<span aria-hidden="true">*</span></label>
+            <select id="subject" name="subject" required>
+              <option value="" selected disabled>Selecteer het onderwerp</option>
+              <option value="vakantiewoning">Informatie over de vakantiewoning</option>
+              <option value="reservering">Een reservering plaatsen</option>
+              <option value="overig">Overige vraag</option>
+            </select>
+          </div>
+          <div class="contact-form__row">
+            <label for="message">Bericht<span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button class="button button-primary" type="button">Bericht verzenden</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-shell section-shell">
+      <picture class="footer-illustration" aria-hidden="true"><source media="(max-width:760px)" srcset="assets/illustraties/illustratie-footer-mobile.svg"><img loading="lazy" decoding="async" src="assets/illustraties/illustratie-footer.svg" alt=""></picture>
+      <div class="footer-main content-width">
+        <div class="footer-brand"><img src="assets/brand/logo-de-weyde-wit.svg" alt="De Weyde"><p>Een sfeervol vakantiehuis voor 2 tot 12 personen, midden in het groene landschap van Westerwolde.</p><a class="button button-primary" href="index.html#reserveren">Reservering aanvragen</a></div>
+        <div class="footer-links"><h2>Vakantiehuis</h2><a href="index.html#vakantiehuis"><img src="assets/icons/icon-arrow-right.svg" alt=""><span>Over De Weyde</span></a><a href="index.html#vakantiehuis"><img src="assets/icons/icon-arrow-right.svg" alt=""><span>Foto’s en voorzieningen</span></a><a href="index.html#reserveren"><img src="assets/icons/icon-arrow-right.svg" alt=""><span>Prijzen en beschikbaarheid</span></a><a href="ontdek-westerwolde.html"><img src="assets/icons/icon-arrow-right.svg" alt=""><span>Ontdek Westerwolde</span></a></div>
+        <div class="footer-contact"><h2>Contact</h2><div class="contact-row contact-address"><img src="assets/icons/icon-locatie.svg" alt=""><span>De Weyde<br>Burg. Buiskoolweg 35<br>9541 XM Vlagtwedde</span></div><div class="contact-row"><img src="assets/icons/icon-telefoon.svg" alt=""><a href="tel:+31683521359">06-83521359</a></div><div class="contact-row"><img src="assets/icons/icon-telefoon.svg" alt=""><a href="tel:+31610228549">06-10228549</a></div></div>
+      </div>
+    </div>
+    <div class="footer-bottom content-width"><span>© 2026 De Weyde</span><nav><a href="#">Privacyverklaring</a><a href="#">Algemene voorwaarden</a><a href="#">Website door <em>Eye Entertainment</em></a></nav></div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
