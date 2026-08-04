@@ -9,6 +9,7 @@
   overflow: hidden;
   color: var(--color-white);
 }
+.hero.section-shell { border-radius: var(--radius-section) var(--radius-section) 0 0; }
 .hero-media,
 .hero-overlay { position: absolute; inset: 0; }
 .hero-brush-mobile { display: none; }

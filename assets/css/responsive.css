@@ -166,7 +166,7 @@
     height: auto;
     min-height: 0;
     margin-top: -90px;
-    border-radius: 0 0 20px 20px;
+    border-radius: var(--radius-section) var(--radius-section) 0 0;
     background: var(--color-tint);
     color: var(--color-green);
     overflow: hidden;
@@ -457,7 +457,7 @@
     min-height: 0;
     margin-top: -1px;
     padding: var(--mobile-space-xl) var(--mobile-content-padding);
-    border-radius: 0 0 20px 20px;
+    border-radius: 2px 2px 20px 20px;
     background: var(--color-green);
     overflow: hidden;
   }

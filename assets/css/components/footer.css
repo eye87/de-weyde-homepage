@@ -7,18 +7,30 @@ footer { padding-top: 48px; }
   position: relative;
   overflow: visible;
   margin-top: 120px;
+  border-radius: 2px 2px var(--radius-section) var(--radius-section);
   background: var(--color-green);
   color: var(--color-white);
 }
 .footer-illustration {
   position: absolute;
   right: 0;
-  bottom: calc(100% - 28px);
+  bottom: calc(100% - 1px);
   left: 0;
   display: block;
   width: 100%;
   height: auto;
   pointer-events: none;
+}
+.footer-illustration img {
+  width: 100%;
+  max-width: none;
+}
+@media (min-width: 761px) {
+  .footer-illustration { overflow: hidden; }
+  .footer-illustration img {
+    width: calc(100% + 4px);
+    transform: translateX(-2px);
+  }
 }
 .footer-main {
   display: grid;
