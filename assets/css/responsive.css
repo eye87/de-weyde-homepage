@@ -470,7 +470,7 @@
   .footer-bottom a { width: fit-content; justify-self: center; }
   .footer-bottom {
     display: block;
-    padding: 60px var(--mobile-content-padding);
+    padding: 50px var(--mobile-content-padding);
     text-align: center;
   }
   .footer-bottom nav { display: grid; gap: 8px; margin-top: 20px; }
