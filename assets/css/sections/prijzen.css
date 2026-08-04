@@ -44,13 +44,14 @@
 .pricing-details-grid .included-section .check-list li { padding:0 0 0 28px; border-radius:0; background:transparent; font-size:14px; line-height:1.65; }
 .pricing-details-grid .included-section .check-list li::before { content:""; top:3px; left:0; width:16px; height:16px; background:url('../../icons/icon-check.svg') center/contain no-repeat; }
 
-.rate-cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; margin:0; padding:64px 48px; border:0; border-radius:18px; background:var(--color-green); box-shadow:0 18px 45px rgba(6,49,29,.1); }
-.rate-card { padding:0 36px; border:0; border-left:1px solid rgba(255,255,255,.18); border-radius:0; background:transparent; color:var(--color-white); }
+.rate-cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; margin:0; padding:0; border:0; border-radius:0; background:transparent; box-shadow:none; }
+.rate-card { padding:48px 40px; border:0; border-radius:18px; background:var(--color-green); color:var(--color-white); box-shadow:0 16px 38px rgba(6,49,29,.1); }
 .rate-card:first-child { border-left:0; }
 .rate-card .eyebrow { color:var(--color-white); font-size:11px; letter-spacing:.16em; }
 .rate-card h3 { margin-top:7px; color:var(--color-white); font-size:26px; }
 .rate-card dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:18px 0 0; }
 .rate-card dl div { padding:8px 0 0; border:0; }
+.rate-card dl div:nth-child(2) { transform:translateX(-20px); }
 .rate-card dt { display:flex; align-items:flex-end; min-height:34px; margin-bottom:4px; color:rgba(255,255,255,.78); font-size:12px; line-height:1.4; white-space:nowrap; }
 .rate-card dd { margin:0; color:var(--color-white); font:600 18px Lora,Georgia,serif; }
 
@@ -113,9 +114,8 @@
   .rate-cards,
   .pricing-details-grid { grid-template-columns:1fr; }
   .pricing-details-grid { padding-inline:0; }
-  .rate-cards { padding:18px 36px; }
-  .rate-card { padding:36px 0; border-left:0; border-top:1px solid rgba(255,255,255,.18); }
-  .rate-card:first-child { border-top:0; }
+  .rate-cards { gap:24px; padding:0; }
+  .rate-card { padding:40px 36px; border:0; }
   .rate-card dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
   .fixed-costs { grid-template-columns:1fr; }
   .check-list { grid-template-columns:repeat(2,minmax(0,1fr)); }
@@ -130,9 +130,10 @@
   .pricing-details-grid { gap:var(--mobile-space-xl); margin-top:0; }
   .wide-tinted-section { width:100vw; margin-left:50%; padding-right:var(--mobile-content-padding); padding-left:var(--mobile-content-padding); transform:translateX(-50%); }
   .prices-content > .seasons-section { margin-bottom:-168px; padding-bottom:248px; }
-  .rate-cards { margin-top:0; padding:14px 28px; }
-  .rate-card { padding:32px 0; }
+  .rate-cards { margin-top:0; padding:0; }
+  .rate-card { padding:34px 28px; }
   .rate-card dl { grid-template-columns:1fr; gap:0; }
+  .rate-card dl div:nth-child(2) { transform:none; }
   .rate-card dt { min-height:0; white-space:normal; }
   .fixed-costs { padding:25px 22px; }
   .fixed-costs dl { grid-template-columns:1fr; }
