@@ -225,6 +225,7 @@
   .hero-actions .button { width: 100%; min-height: var(--mobile-button-height); font-size: var(--mobile-button-size); }
   .hero-actions .button-outline-light { border-color: #111; color: #111; }
   .hero-actions .button-outline-light::after { background-image: url('../icons/icon-arrow-right.svg'); }
+  .hero-actions .button-down::after { background-image:url('../icons/arrow-white-down.svg'); }
   .hero-brush { display: none; }
 
   .usp-section {
@@ -239,6 +240,7 @@
   .environment-usps .usp-item strong { font-size: 21px; line-height: 1.2; }
 
   .discover {
+    scroll-margin-top: 50px;
     padding: var(--mobile-space-xl) 0;
     border-radius: 20px;
     overflow: hidden;

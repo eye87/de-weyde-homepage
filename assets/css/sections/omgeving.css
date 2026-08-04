@@ -5,7 +5,7 @@
   background-image: url('../../fotos/omgeving-generated/hero-westerwolde-gebouw.webp');
   background-position: center 50%;
 }
-.environment-hero.hero { height:560px; min-height:560px; }
+.environment-hero.hero { height:590px; min-height:590px; }
 .environment-hero .hero-content { padding-top: 128px; }
 .environment-hero h1 { max-width: 670px; }
 .environment-hero .hero-intro { max-width: 690px; }
@@ -93,7 +93,7 @@
  .environment-intro,.guide-note{grid-template-columns:1fr;gap:50px}.guide-note--reverse>.guide-note__copy,.guide-note--reverse>.guide-note__gallery{grid-column:auto;grid-row:auto}.environment-intro__visual{width:min(700px,100%);margin:auto}.category-grid{grid-template-columns:repeat(2,1fr);gap:55px 45px}
 }
 @media(min-width:761px) and (max-width:1050px){
- .environment-hero.hero{height:430px;min-height:430px}.environment-hero .hero-content{padding-top:72px}
+ .environment-hero.hero{height:460px;min-height:460px}.environment-hero .hero-content{padding-top:72px}
 }
 @media(max-width:760px){
  .environment-hero .hero-media{background-position:58% center}.environment-hero .hero-content{padding-top:70px}

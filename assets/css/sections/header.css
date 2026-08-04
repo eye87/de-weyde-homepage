@@ -43,6 +43,15 @@
 }
 .hero-actions { display: flex; gap: 20px; margin-top: 38px; }
 .hero-actions .button { min-height: 46px; padding-inline: 27px; }
+.hero-actions .button-down::after {
+  width: 18px;
+  height: 24px;
+  background-image: url('../../icons/arrow-white-down.svg');
+}
+.hero-actions .button-down:hover::after {
+  flex-basis: 18px;
+  transform: translateX(0) scale(.9);
+}
 .hero-brush {
   position: absolute;
   left: -10px;

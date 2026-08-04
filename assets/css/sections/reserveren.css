@@ -3,6 +3,7 @@
 ====================================================== */
 
 .reservation-content { padding: 112px 0 150px; }
+#beschikbaarheid { scroll-margin-top:240px; }
 .reservation-step + .reservation-step { margin-top: 120px; }
 .reservation-step__heading { max-width: 720px; }
 .reservation-step__number { display: inline-flex; margin: 0 0 24px; padding: 8px 15px; border-radius: 999px; background: var(--color-green); color: var(--color-white); font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
@@ -38,6 +39,7 @@
 }
 
 @media(max-width:760px){
+  #beschikbaarheid { scroll-margin-top:150px; }
   .reservation-content { width:calc(100% - 60px); padding:78px 0 100px; }
   .reservation-step + .reservation-step { margin-top:80px; }
   .reservation-step__number { margin-bottom:18px; }

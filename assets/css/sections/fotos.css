@@ -3,6 +3,7 @@
 ====================================================== */
 
 .discover { padding: 108px 0 120px; }
+#vakantiehuis { scroll-margin-top: 110px; }
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
