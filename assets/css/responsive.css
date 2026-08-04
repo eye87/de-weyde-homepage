@@ -87,7 +87,7 @@
   .about-copy .eyebrow {
     margin: 0 0 10px;
     padding: 0;
-    color: #BA7548;
+    color: var(--color-accent);
     font-family: Inter, Arial, sans-serif;
     font-size: var(--mobile-eyebrow-size);
     font-weight: 400;
@@ -225,7 +225,7 @@
   .hero-actions .button { width: 100%; min-height: var(--mobile-button-height); font-size: var(--mobile-button-size); }
   .hero-actions .button-outline-light { border-color: #111; color: #111; }
   .hero-actions .button-outline-light::after { background-image: url('../icons/icon-arrow-right.svg'); }
-  .hero-actions .button-down::after { background-image:url('../icons/arrow-white-down.svg'); }
+  .hero-actions .button-down::after { background-image: url('../icons/arrow-white-down.svg'); }
   .hero-brush { display: none; }
 
   .usp-section {

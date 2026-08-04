@@ -37,6 +37,16 @@ assets/
 
 Open `index.html` rechtstreeks in een browser of gebruik een lokale webserver, bijvoorbeeld via de Live Server-extensie in VS Code.
 
+## Statische controle
+
+Voer na structurele wijzigingen de lokale controle uit:
+
+```sh
+./scripts/check-static.sh
+```
+
+Deze controle verifieert de diff, lokale bestandsverwijzingen, unieke HTML-ID's, één H1 per pagina en gebalanceerde CSS-accolades.
+
 ## Versie 3.5.0 — code cleanup
 
 - CSS-bestanden hernoemd volgens de afgesproken contentblokken.

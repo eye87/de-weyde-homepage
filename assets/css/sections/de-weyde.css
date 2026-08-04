@@ -9,7 +9,7 @@
   padding: 138px 0;
 }
 .about-copy { max-width: 540px; }
-.about-copy .eyebrow { color: #BA7548; }
+.about-copy .eyebrow { color: var(--color-accent); }
 .about-copy h2 { margin-bottom: 42px; font-size: 48px; }
 .about-copy h3 {
   margin: 28px 0 12px;

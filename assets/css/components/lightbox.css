@@ -10,7 +10,7 @@
   padding: 0;
   border: 0;
   background: transparent;
-  color: #FEFDFB;
+  color: var(--color-page);
   overflow: hidden;
 }
 
@@ -44,12 +44,12 @@
   width: min(920px, calc(100% - 140px));
   margin: 0 auto 20px;
   text-align: center;
-  color: #FEFDFB;
+  color: var(--color-page);
 }
 
 .photo-lightbox__heading h2 {
   margin: 0 0 8px;
-  color: #FEFDFB;
+  color: var(--color-page);
   font-family: Lora, Georgia, serif;
   font-size: 45px;
   font-weight: 600;
@@ -59,7 +59,7 @@
 .photo-lightbox__heading p {
   max-width: 760px;
   margin: 0 auto;
-  color: #FEFDFB;
+  color: var(--color-page);
   font-family: Inter, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -115,7 +115,7 @@
 
 .photo-lightbox__counter {
   justify-self: center;
-  color: #FEFDFB;
+  color: var(--color-page);
   font-family: Inter, Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
