@@ -43,6 +43,7 @@
   .about-visual { width: min(700px, 100%); margin: auto; }
   .footer-main { gap: 50px; }
   .facilities-grid { gap: 55px 45px; transform: none; }
+  .category-grid { transform: none; }
 }
 
 
